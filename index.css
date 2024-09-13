@@ -1,0 +1,115 @@
+/* Reset basic elements */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #f0f4f8;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Flexbox layout for header */
+.header-flex {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Nama di kanan, foto di kiri */
+    padding: 20px;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Styling for profile photo */
+.profile-photo img {
+    width: 150px; /* Set foto ukuran tetap */
+    height: 150px;
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    object-fit: cover; /* Agar gambar menyesuaikan lingkaran */
+    border: 3px solid #3498db; /* Menambahkan border biru pada foto */
+}
+
+/* Styling for profile info (Nama dan Jabatan) */
+.profile-info {
+    text-align: right; /* Nama dan jabatan di sebelah kanan */
+}
+
+.profile-info h1 {
+    font-size: 2.5em;
+    color: #2980b9;
+}
+
+.profile-info h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+/* Layout for sections - Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 20px 0;
+}
+
+/* Section styling */
+section {
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #2980b9;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #3498db;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+.gallery {
+    margin: 20px 0;
+}
+
+.gallery h3 {
+    color: #2980b9;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%; 
+    height: 300px; 
+    border-radius: 8px;
+    object-fit: cover; 
+    transition: transform 0.3s;
+}
+
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
